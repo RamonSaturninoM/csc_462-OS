@@ -25,7 +25,7 @@ static long l_pid;
 static ssize_t proc_read(struct file *file, char *buf, size_t count, loff_t *pos);
 static ssize_t proc_write(struct file *file, const char __user *usr_buf, size_t count, loff_t *pos);
 
-static struct file_operations proc_ops = {
+static struct proc_ops proc_ops = {
         .proc_read = proc_read,
         .proc_write = proc_write
 };
